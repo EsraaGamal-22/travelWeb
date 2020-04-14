@@ -1,0 +1,9 @@
+-this website:
+resposive(using for mobile screen and large screen) website for travel
+- using html, css and bootstrap
+
+- setting up website to resposive:
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+- search on google bootstrap cdn :
+    copy this from complete css        https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css

@@ -1,0 +1,321 @@
+*
+{
+  padding: 0px;
+  margin:0px;
+}
+/********************************* header *****************************/
+.header
+{
+width: 2000px;
+height:910px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("images/banner1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+padding:20px;
+text-align: center;
+color:#ffffff;
+}
+.container
+{
+margin:0px !important;
+
+}
+.header img{
+  width:170px;
+  float:left;
+  /*margin-top:-60 --->/* Moves the element 60px upwards */
+  margin-top:-60px;
+  margin-left: 20px;
+
+}
+.btn{
+  width:100px !important;
+ padding: 8px 0px !important;
+ outline: none !important;
+  border:2px solid #fff !important;
+  border-radius: 50px !important;
+/*  margin-top: 30px;*/
+  float: right;
+}
+.header h1
+{
+  padding-top: 260px;
+  padding-bottom: 0px;
+  font-size: 55px;
+  margin-left: -700px;
+
+}
+.header p
+{
+  margin-left: -700px;
+  padding: 18px 0px;
+}
+.input-group
+{
+  width:90% !important;
+  max-width: 500px;
+  border-radius: 30px;
+  background: #ffffff;
+  margin: auto;
+  padding: 2px;
+  margin-left:400px;
+}
+.form-control
+{
+  border: 0 !important;
+  border-radius: 30px  !important;
+  margin: 2px;
+  box-shadow: none !important;
+}
+.input-group-text
+{
+  width: 100px;
+  background-image: linear-gradient(#00ff7e,#1f3d90);
+  border: 0 !important;
+  color:#ffffff !important;
+  border-radius: 30px !important;
+  padding: 0px 25px !important;
+  box-shadow: none !important
+}
+/**************************************** features **************************************/
+.features
+{
+padding:100px 0px; /* top&bottom=20px left&right=0px*/
+
+
+}
+h1
+{
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*.f1
+{
+  margin-left: 100px;
+}*/
+.row
+{
+    margin-left: 200px !important;
+}
+.feature-box
+{
+  box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+  margin-bottom: 30px;
+}
+.feature-img img{
+  /*width:100%--> the element’s total width will be 100% of its containing block plus any
+  horizontal margin, padding and border (unless you’ve used box-sizing:border-box, in which case only margins are added to the
+   100% to change how its total width is calculated). This may be what you want, but most likely it isn’t.*/
+  width:100%;
+}
+.price
+{
+  width: 50px;
+  height: 50px;
+  background: #ff5722;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+  /*absolute	The element is positioned relative to its first positioned (not static) ancestor(الجد الاكبر اللي هو ال-->feature-img) element*/
+  position: absolute;
+  left:20px;
+  /*All elements succeeding in price move up by 50px*/
+  bottom: -25px;
+}
+.feature-img{
+  /*relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position*/
+  position: relative;
+  left:20px;
+}
+.rating
+{
+    /*margin-left: 400px;*/
+    padding: 3px;
+    float:right;
+    background: #ffffff;
+    bottom: -1px;
+    right:0px;
+    /*absolute	The element is positioned relative to its first positioned (not static) ancestor(الجد الاكبر اللي هو ال-->feature-img) element*/
+    position: absolute;
+
+}
+.features .fa {
+  font-size: 15px;
+  color:#ff5722;
+}
+.feature-details
+{
+  padding:20px;
+  /*justify-->	Stretches the lines so that each line has equal width (like in newspapers and magazines)*/
+  text-align: justify;
+}
+.feature-details h4
+{
+  margin-top: 20px;
+  /* 600--> Semi Bold (Demi Bold)*/
+  font-weight: 600;
+}
+/********************************** Gallery ********************************************/
+.gallery{
+  padding:100px 0; /*top&bottom=100px left&right=0*/
+  background: #efefef;
+}
+.gallery-box
+{
+  margin-bottom: 30px;
+  /*An element with position: relative; is positioned relative to its normal position */
+  position: relative;
+}
+.gallery-box img
+{
+  width:100%;
+  border-radius: 10px;
+  /*pointer	The cursor--> is a pointer and indicates a link*/
+  cursor: pointer;
+  transition: 1s;
+}
+/*You can simply use the CSS background-image property in combination with the :hover pseudo-class to replace or change the image on mouseover.*/
+.gallery-box img:hover
+{
+  /* CSS transforms allow you to move, rotate, scale, and skew elements.
+   The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).*/
+  transform:scale(1.1); /* scale(width_value, height_value) , here --> scale() shorthand to scale both axes at the same time:*/
+}
+.gallery-box h4
+{
+  /* if there is space between one word such as los angoles using this :
+     display:block-->  block	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+  display:block;*/
+  /* 600--> Semi Bold (Demi Bold)*/
+  font-weight:600;
+  /*absolute	The element is positioned relative to its first positioned (not static) ancestor element.*/
+  position: absolute;
+  top:50%;
+  left:50%;
+  color:#ffffff;
+  text-shadow: -2px 2px 2px #000;
+  /*  transform:translate(-50%, -50%) is required is because you want the center of the element to line up with the center of its parent. In simple terms,
+  it can be boiled down to translateX(-50%) translateY(-50%) , which means: move me leftwards by 50% of my width, along the x-axis*/
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+}
+/*************************************************** banner ********************************************************/
+.banner
+{
+  height:80%;
+  /*width: 2000px;
+  height:500px;*/
+  background-image:url("images/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* 10%-->	Specifies a top padding in percent of the width of the element */
+  padding-top: 12%;
+  padding-bottom: 20%;
+}
+.banner-highlights
+{
+  padding:70px 0px;
+  background:rgba(0,0,0,0.7);
+  text-align: center;
+  color:#ffffff;
+}
+.booking-btn
+{
+  width:100px ;
+ padding: 8px 0px ;
+ outline: none ;
+  border:2px solid #ffffff ;
+  border-radius: 50px;
+  /* background: transparent;--> will be show the background*/
+  background: transparent;
+  color:#ffffff;
+  margin-top: 20px;
+}
+/*********************************** users feedback **********************/
+.users-feedback
+{
+  padding: 100px 0px;
+}
+.user-review
+{
+  text-align: center;
+  box-shadow: 0 0 10px 0  #cccccc;
+  padding-bottom: 50px;
+
+}
+.user-review p{
+  padding:50px 10px 10px 10px;
+}
+.users-feedback img
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position:relative;
+  margin: -30px 0 20px 40%;
+}
+/*The ::before selector -->inserts something before the content of each selected element(s).*/
+
+.user-review p::before
+{
+   /*Use the content property -->to specify the content to insert."using this property with ::before"*/
+  content: '\201d';
+  /*A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).*/
+  display: block;
+  position: absolute;
+  font-size: 100px;
+  color:#6495ed;
+  font-family: sans-serif;
+  left: 44%;
+  top:-20px;
+}
+/************************************* footer ******************************************/
+.footer
+{
+padding:100px 20px 15px;
+/* To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among
+    linear-gradient(direction, color-stop1, color-stop2, ...);*/
+background-image: linear-gradient(#2d557d,#9610fd); /* using default direction  Top to Bottom*/
+color: #ffffff;
+}
+.footer-logo
+{
+  width:150px;
+  margin-top: 15px;
+  margin-bottom:-30px;
+}
+.footer h4
+{
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+.footer p{
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 35px;
+}
+
+.footer .row .fa {
+  padding-right: 20px;/*to add space from right after icon then put text after 20px from icon*/
+
+  font-size: 15px;
+}
+.footer hr{
+  margin-top: 10px;
+  background: #efefef;
+}
+.fa-heart
+{
+  margin:0 5px;
+  color:#f44336;
+}
+.footer .copyright
+{
+  text-align: center;
+}
